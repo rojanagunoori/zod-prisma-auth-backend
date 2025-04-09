@@ -1,5 +1,6 @@
 // src/routes/user.routes.ts
-import { Router } from "express";import { deleteUser, getAllUsers, getUserById, updateUser } from "../controllers/user.controller";
+import { Router } from "express";
+import { deleteUser, getAllUsers, getUserById, updateUser } from "../controllers/user.controller";
 ;
 
 
