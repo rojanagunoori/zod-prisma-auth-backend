@@ -6,7 +6,13 @@ import { errorMiddleware } from "./middlewares/error.middleware";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://zod-prisma-auth.netlify.app",
+  credentials: true
+}));
+
+
+//app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
